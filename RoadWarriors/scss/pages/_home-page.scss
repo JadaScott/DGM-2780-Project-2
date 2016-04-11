@@ -1,0 +1,13 @@
+// Home Page SCSS
+
+#home-page {
+
+	.hero-banner {
+		width: 940px;
+		height: 240px;
+		background: transparent url(../images/bike.jpg) no-repeat 0 0;
+		@include border-radius (5px + 5px);
+
+	}	
+}
+

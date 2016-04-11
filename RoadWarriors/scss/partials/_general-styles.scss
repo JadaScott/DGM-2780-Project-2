@@ -1,0 +1,124 @@
+// General Styles
+
+html, body * {
+	box-sizing: border-box;
+	font-family: $font-stack;
+	
+}
+
+
+#container {
+	width: 100%;
+}
+
+.wrapper {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 10px 30px;
+	background: $snow-white;
+	}
+
+	@include breakpoint(tablet) {
+		background: $snow-white;
+	}
+	@include breakpoint (phone){
+		background: $snow-white;
+	}
+
+
+h1 {
+	font-family: $font-stack;
+	font-weight: 700;
+	font-size: 20px;
+	color: $skyrocket-red;
+	padding: 25px 0 18px 0;
+	
+}
+
+h2 {
+	@extend h1;
+	font-size: 19px;
+
+}
+
+div.column {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 20px + 20px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 20px + 20px; /* Firefox */
+    column-gap: 20px + 20px;
+    margin: 8px 0 50px 0;
+}
+
+
+.cols4 {
+  -webkit-column-count: 4;
+  -webkit-column-gap: 2.5em;
+  -moz-column-count: 4;
+  -moz-column-gap: 2.5em;
+  column-count: 4;
+  column-gap: 2.5em;
+  margin: .5em 0 1em 0;
+
+ 
+ }
+
+//Images
+
+img {
+	width: 204px;
+	height: auto;
+}
+
+figure img {
+	@extend img;
+	width: 100%;
+	border: 2px solid $midnight-black;
+}
+
+
+//Footer
+
+
+.footerCenter {
+
+  text-align: center;
+  clear: both;
+
+}
+
+footer {
+		
+        ul{
+            margin: 12px 0 0 0;
+            padding: 0;
+
+    	li {
+    		
+    
+            list-style-type: none;
+            display: inline;
+          
+    		
+            
+            + li:before {
+                color: $midnight-black;
+                content: "|";
+                margin-right: .2em;
+            }
+
+
+    		a {
+    			color: $midnight-black;
+    			text-decoration: none;
+                font-size: 14px;
+
+    			&:hover {
+    				color: $skyrocket-red;
+    			}
+                
+    		}
+        } 
+    }
+}

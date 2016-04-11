@@ -1,0 +1,57 @@
+// Header SCSS
+
+
+.header {
+
+	margin-bottom: 5px + 5px; 
+
+	@include clearfix();
+
+	h1 {
+		float: left;
+		font-size: 40px;
+		
+	}
+
+    nav {
+
+    	float: right;
+
+        ul{
+            margin: 12px 0 0 0;
+            padding: 0;
+
+    	li {
+    		float: left;
+    		padding: .2em;
+            list-style-type: none;
+            display: inline;
+          
+    		span {
+    		padding-left: .5em;
+    		}
+            
+            + li:before {
+                color: $midnight-black;
+                content: "|";
+                margin-right: .5em;
+            }
+
+
+    		a {
+    			color: $midnight-black;
+    			text-decoration: none;
+                font-size: 16px;
+
+    			&:hover {
+    				color: $skyrocket-red;
+    			}
+                
+    		  }
+           } 
+       }
+    }	
+}
+
+
+// 

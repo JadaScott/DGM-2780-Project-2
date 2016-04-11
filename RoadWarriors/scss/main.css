@@ -1,0 +1,166 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1,
+h2, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, figure img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html, body * {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif; }
+
+#container {
+  width: 100%; }
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 10px 30px;
+  background: #fff; }
+
+@media (min-width: 50em) {
+  background: #fff; }
+h1, h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #c90521;
+  padding: 25px 0 18px 0; }
+
+h2 {
+  font-size: 19px; }
+
+div.column {
+  -webkit-column-count: 2;
+  /* Chrome, Safari, Opera */
+  -moz-column-count: 2;
+  /* Firefox */
+  column-count: 2;
+  -webkit-column-gap: 40px;
+  /* Chrome, Safari, Opera */
+  -moz-column-gap: 40px;
+  /* Firefox */
+  column-gap: 40px;
+  margin: 8px 0 50px 0; }
+
+.cols4 {
+  -webkit-column-count: 4;
+  -webkit-column-gap: 2.5em;
+  -moz-column-count: 4;
+  -moz-column-gap: 2.5em;
+  column-count: 4;
+  column-gap: 2.5em;
+  margin: .5em 0 1em 0; }
+
+img, figure img {
+  width: 204px;
+  height: auto; }
+
+figure img {
+  width: 100%;
+  border: 2px solid #000; }
+
+.footerCenter {
+  text-align: center;
+  clear: both; }
+
+footer ul {
+  margin: 12px 0 0 0;
+  padding: 0; }
+  footer ul li {
+    list-style-type: none;
+    display: inline; }
+    footer ul li + li:before {
+      color: #000;
+      content: "|";
+      margin-right: .2em; }
+    footer ul li a {
+      color: #000;
+      text-decoration: none;
+      font-size: 14px; }
+      footer ul li a:hover {
+        color: #c90521; }
+
+.header {
+  margin-bottom: 10px; }
+  .header:before, .header:after {
+    content: "";
+    display: table; }
+  .header:after {
+    clear: both; }
+  .header h1, .header h2 {
+    float: left;
+    font-size: 40px; }
+  .header nav {
+    float: right; }
+    .header nav ul {
+      margin: 12px 0 0 0;
+      padding: 0; }
+      .header nav ul li {
+        float: left;
+        padding: .2em;
+        list-style-type: none;
+        display: inline; }
+        .header nav ul li span {
+          padding-left: .5em; }
+        .header nav ul li + li:before {
+          color: #000;
+          content: "|";
+          margin-right: .5em; }
+        .header nav ul li a {
+          color: #000;
+          text-decoration: none;
+          font-size: 16px; }
+          .header nav ul li a:hover {
+            color: #c90521; }
+
+#home-page .hero-banner {
+  width: 940px;
+  height: 240px;
+  background: transparent url(../images/bike.jpg) no-repeat 0 0;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-clip: padding-box; }
+
+/*# sourceMappingURL=main.css.map */
